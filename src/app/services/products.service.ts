@@ -16,6 +16,6 @@ export class ProductsService {
     return this.http.get<Product[]>('https://young-sands-07814.herokuapp.com/api/products');
   }
   getProduct(id:string) {
-    return this.http.get<Product>()
+//    return this.http.get<Product>()
   }
 }
