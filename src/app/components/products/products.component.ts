@@ -35,6 +35,7 @@ export class ProductsComponent implements OnInit {
     this.storeService.addProduct(product);
     this.total = this.storeService.getTotal();
   }
+<<<<<<< HEAD
 
   toggleProductDetail() {
     this.showProductDetail = !this.showProductDetail;
@@ -43,4 +44,15 @@ export class ProductsComponent implements OnInit {
     
   }
 
+=======
+  toogleProductDetail() {
+    this.showProductDetail = !this.showProductDetail;
+  }
+  onShowDetail(id: string) {
+    this.productsService.getProduct(id)
+    .subscribe(data => {
+      console.log('product', data);
+    })
+  }
+>>>>>>> 23c694ba4d07a572d2eb27f8482b23bb86de63d4
 }

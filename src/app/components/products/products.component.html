@@ -1,15 +1,30 @@
+<<<<<<< HEAD
 <button (click)="toggleProductDetail()">click</button>
+=======
+<button (click)="toogleProductDetail()">click</button>
+>>>>>>> 23c694ba4d07a572d2eb27f8482b23bb86de63d4
 <div class="products--grid">
   <app-product
     [product]="product"
     *ngFor="let product of products"
     (addedProduct)="onAddToShoppingCart($event)"
+<<<<<<< HEAD
     (showDetail)="onShowDetail($event)"
+=======
+    (showProduct)="onShowDetail($event)"
+>>>>>>> 23c694ba4d07a572d2eb27f8482b23bb86de63d4
   ></app-product>
 </div>
 <div class="product-detail" [class.active]="showProductDetail">
   <div>
+<<<<<<< HEAD
     <button (click)="toggleProductDetail()">Close</button>
     Contenido
   </div>
 </div>
+=======
+    <button (click)="toogleProductDetail()">Close</button>
+    Contenido
+  </div>
+</div>
+>>>>>>> 23c694ba4d07a572d2eb27f8482b23bb86de63d4
